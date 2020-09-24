@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link rel="stylesheet" href="./css/sty.css">
+	<link rel="stylesheet" href="./css/common.css" />
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="css/index_end.css">
+	<link rel="stylesheet" href="./css/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/loginAndRegister.css"/>
+	<style>
+		.btn-item {
+			position: absolute;
+			top: 220px;
+			width: 60px;
+			height: 40px;
+			text-align: center;
+			font-size: 37px;
+			line-height: 40px;
+			background-color: rgba(182, 177, 177, 0.5);
+		}
+		.btn-item:hover {
+			background-color: rgba(182, 177, 177, 1);
+		}
+		.btn-item:active {
+			background-color: rgba(0, 0, 0, .5);
+		}
+		.left {
+			left: 40px;
+		}
+		.right {
+			right: 40px;
+		}
+	</style>
+</head>
+<body>
+	<!--可替换部分-->
+	<div class="replace">
+		<!-- 轮播图 -->
+		<div class="banner">
+			<div class="banner-inner swiper-box container">
+				<ul class="swiper-list flex align-center">
+					<li class="swiper-item">
+						<img src="./images/slider1_1.jpg" alt="">
+					</li>
+					<li class="swiper-item">
+						<img src="./images/slider1_2.jpg" alt="">
+					</li>
+					<li class="swiper-item">
+						<img src="./images/slider1_1.jpg" alt="">
+					</li>
+				</ul>
+			</div>
+			<!-- 左右切换按钮 -->
+			<div class="banner-btn">
+				<div class="btn-item left">
+					<i class="fa fa-angle-left"></i>
+				</div>
+				<div class="btn-item right">
+					<i class="fa fa-angle-right"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../jq/jquery-3.2.1.min.js"></script>
+	<script src="js/banner.js"></script>
+</body>
+</html>

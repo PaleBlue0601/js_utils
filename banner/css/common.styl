@@ -1,0 +1,259 @@
+$orange = #f5af19
+$orange-h = #FFA500
+
+.h-orange
+	cursor pointer
+	&:hover
+		color #FFA500
+.grade
+	color $orange
+
+.scroll-box
+	height 100vh
+	overflow auto
+// 返回顶部
+#back-top
+	position fixed
+	bottom 50px
+	right 50px
+	width 45px
+	height 45px
+	line-height 40px
+	font-size 22px
+	border-radius 50%
+	background-color #407DCE
+	text-align center
+	color #FFFFFF
+	cursor pointer
+	display none
+//  遮罩
+.shadow
+	z-index 99
+	position fixed
+	left 0
+	top 0
+	width 100vw
+	height 100vh
+	background rgba(0,0,0,.2)
+#login
+	display none
+// 购物车
+#cart
+	text-align center
+	color #666
+	display none
+	.cart-box
+		height 600px
+		background-color #FFFFFF
+		border-radius 5px
+		padding 20px 150px 10px
+	.close
+		position absolute
+		right 0
+		top 0
+		width 20px
+		height 20px
+		line-height 15px
+		border-radius 50%
+		border 1px solid #666
+		cursor pointer
+	.product-control
+		border 1px solid #666
+		padding 15px 10px
+		color #000000
+		&>div
+			padding 0 10px
+			height 40px 
+			line-height 40px
+			background-color #DDDDDF
+			cursor pointer
+			transition background-color .2s
+			&:hover
+				background-color #D3D3D4
+	.cart-inner
+		margin 0 auto
+		max-height 500px
+		overflow auto
+	.product-item
+		display flex
+		line-height 80px
+		&.info
+			height 50px
+			line-height 50px
+				
+		div
+			border 1px solid #666
+			border-bottom none
+			
+		.product-pic,.product-name,.product-price,.product-num,.checkbox
+			border-right none
+		.product-name,.product-price
+			width 105px
+		.product-num
+			width 150px
+			input
+				width 50px
+				height 50px
+				border 1px solid #999
+				margin 0 5px
+				text-align center
+			.increment,.decrease
+				width 30px
+				height 30px
+				line-height 30px
+				border-radius 50%
+				border  none
+				color #FFFFFF
+				background-color #F5AF19
+				transition all .2s
+				user-select none
+				cursor pointer
+				&:hover
+					background-color #DB9C17
+		.total-price
+			width 100px
+		.product-pic
+			width 150px
+			height 80px
+		.checkbox
+			display flex
+			justify-content center
+			align-items center
+			width 60px
+			
+// dialog
+#dialog
+	z-index 999
+	position fixed
+	top -40px
+	left 50%
+	transform translateX(-50%)
+	padding 0 20px
+	background-color #F5AF19
+	color #FFFFFF
+	height 40px
+	line-height 40px
+	border-radius 10px
+	transition all .3s
+	opacity 0
+	&.to
+		opacity 1
+		transform translate(-50%,70px)
+	&.error
+		background-color #ED4014
+	&.success
+		background-color #87D068
+	&.info
+		background-color #F5AF19
+//  主体
+.main-box
+	nav
+		margin-top 20px
+		.nav-list
+			background #707070
+			border-bottom 3px solid #5C5C5C
+			li
+				z-index 2
+				font-size 24px
+				line-height 50px
+				color #FFFFFF
+				border-bottom 3px solid transparent
+				transition background-color .2s
+				&:hover
+					background-color #E77B64
+					border-color #EF5638
+				&.home
+					padding-left 30px
+					width 220px
+				&.active
+					background-color #467ECB
+					border-color #345C92
+				a
+					display block
+					padding 0 10px
+	.main-top
+		margin-top 40px
+		.main-top-cart
+			cursor pointer
+			&:hover
+				color $orange
+				.quantity
+					color $orange !important
+			.main-top-cart-logo
+				width 50px
+				height 50px
+				border-radius 50%
+				background-color #467ECB
+				background-image url(../images/icon-cart.png)
+				background-position center
+			.main-top-cart-main
+				margin-left 10px
+				.quantity
+					font-size 14px
+					color #666666
+		.main-top-search
+		
+			margin 0 50px
+			.search-btn
+				width 50px
+				height 50px
+				background-image url(../images/icon-search.png) 
+				background-position center
+				background-color $orange
+				border 2px solid $orange
+				cursor pointer
+				&:hover
+					background-color $orange-h
+				
+			.search-inner
+				height 50px
+				border 2px solid $orange
+				padding 0 15px
+				input
+					border none
+					width 100%
+					height 100%
+					outline 0
+// 页面顶栏
+.header-box
+	.header-main
+		line-height 50px
+		z-index 10
+		background #fff
+		color #575757
+		a:hover
+			color $orange
+	.menu
+		line-height 22px
+		height 22px
+		li
+			border-color #000000
+			padding 0 10px
+	.language
+		position relative
+		&:hover
+			.language-list
+				height 	120px
+		.nowlanguage
+			cursor pointer
+			&:hover
+				color #FFA500
+		.language-list
+			position absolute
+			z-index 9
+			left 0
+			bottom 0
+			line-height 40px
+			transform translateY(100%)
+			width 90%
+			height 0
+			padding-left 10px
+			background #FFF
+			border 1px solid #f1f1f1
+			border-top none
+			overflow hidden
+
+			transition height .2s
+			li:hover
+				cursor pointer
+				color #FFA500

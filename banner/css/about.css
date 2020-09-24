@@ -1,0 +1,56 @@
+#about .cover {
+  background-image: url("../images/slider-7.jpg");
+  background-size: cover;
+  background-position: 0 -200px;
+  height: 320px;
+  overflow: hidden;
+}
+#about .cover .text {
+  margin-top: 150px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 30px;
+}
+#about .team {
+  color: #666;
+  background-color: #ededed;
+  padding: 60px 0;
+  text-align: center;
+}
+#about .team .team-list li {
+  padding: 0 10px;
+}
+#about .team .title {
+  line-height: 40px;
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+#about .team .avatar img {
+  margin: 0 auto;
+}
+#about .team .desc {
+  text-align: left;
+}
+#about .team .name {
+  font-weight: 500;
+  font-size: 20px;
+  margin: 5px 0 15px;
+}
+#about .team .position {
+  font-size: 16px;
+  margin: 0 0 5px;
+}
+#about .vis {
+  color: #666;
+  overflow: hidden;
+  margin: 50px auto;
+}
+#about .vis .title {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin: 25px 0;
+}
+#about .vis .text-list li {
+  margin-right: 15px;
+}

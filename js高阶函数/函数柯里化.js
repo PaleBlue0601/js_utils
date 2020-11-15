@@ -17,8 +17,6 @@ function curry(func) {
   }
 }
 //1 参数复用
-const _ = require("lodash");
-
 const buildUriCurry = curry(buildUri);
 const myGithubPath = buildUriCurry("https", "github.com");
 const profilePath = myGithubPath("WHBhorse");
